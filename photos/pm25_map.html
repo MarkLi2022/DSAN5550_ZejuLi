@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_484e8e82b060860d2bd3dd3e8905af6c {
+                #map_73ddcacdd573e1c07e87ffe094d50021 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,14 +39,25 @@
 <body>
     
     
-            <div class="folium-map" id="map_484e8e82b060860d2bd3dd3e8905af6c" ></div>
+<div style="position: fixed; 
+     bottom: 50px; left: 50px; width: 250px; height: 150px; 
+     border:2px solid grey; z-index:9999; font-size:14px;
+     padding: 10px 10px;
+     background: white;
+     ">&nbsp; <b>PM2.5 Levels</b><br>
+     &nbsp; <i style="background:green; width: 20px; height: 10px; vertical-align: middle; display: inline-block;"></i>&nbsp;0-50 Good<br>
+     &nbsp; <i style="background:yellow; width: 20px; height: 10px; vertical-align: middle; display: inline-block;"></i>&nbsp;51-100 Moderate<br>
+     &nbsp; <i style="background:orange; width: 20px; height: 10px; vertical-align: middle; display: inline-block;"></i>&nbsp;101-150 Unhealthy for Sensitive Groups<br>
+     &nbsp; <i style="background:red; width: 20px; height: 10px; vertical-align: middle; display: inline-block;"></i>&nbsp;151+ Unhealthy</div>
+    
+            <div class="folium-map" id="map_73ddcacdd573e1c07e87ffe094d50021" ></div>
         
 </body>
 <script>
     
     
-            var map_484e8e82b060860d2bd3dd3e8905af6c = L.map(
-                "map_484e8e82b060860d2bd3dd3e8905af6c",
+            var map_73ddcacdd573e1c07e87ffe094d50021 = L.map(
+                "map_73ddcacdd573e1c07e87ffe094d50021",
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -60,22 +71,22 @@
 
         
     
-            var tile_layer_ecf01ecf945122cb1320ad83458978b5 = L.tileLayer(
+            var tile_layer_01302935dc4e0c3f997a466d6e9a05e9 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_ecf01ecf945122cb1320ad83458978b5.addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            tile_layer_01302935dc4e0c3f997a466d6e9a05e9.addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            var circle_5c55804c3c67e30a5de2cf93fed00e82 = L.circle(
+            var circle_7017805e1638256c9f57f43e43f1e36d = L.circle(
                 [34.52, 69.18],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_5c55804c3c67e30a5de2cf93fed00e82.bindTooltip(
+            circle_7017805e1638256c9f57f43e43f1e36d.bindTooltip(
                 `<div>
                      Country: afghanistan<br>PM2.5: 21.15 µg/m³
                  </div>`,
@@ -83,13 +94,13 @@
             );
         
     
-            var circle_d8f8bd679ff5ff01cb621a324764aef8 = L.circle(
+            var circle_8d65eeb32acc3b9a5e32e06bdbf58d74 = L.circle(
                 [41.33, 19.82],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_d8f8bd679ff5ff01cb621a324764aef8.bindTooltip(
+            circle_8d65eeb32acc3b9a5e32e06bdbf58d74.bindTooltip(
                 `<div>
                      Country: albania<br>PM2.5: 12.35 µg/m³
                  </div>`,
@@ -97,13 +108,13 @@
             );
         
     
-            var circle_15011affc5a3845b45fd9eead850b406 = L.circle(
+            var circle_84c40b673613a5ed0a8690feea500ed5 = L.circle(
                 [36.76, 3.05],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_15011affc5a3845b45fd9eead850b406.bindTooltip(
+            circle_84c40b673613a5ed0a8690feea500ed5.bindTooltip(
                 `<div>
                      Country: algeria<br>PM2.5: 12.25 µg/m³
                  </div>`,
@@ -111,13 +122,13 @@
             );
         
     
-            var circle_68d266978ba5c8099f8d6e92e97e3273 = L.circle(
+            var circle_5e09415449a5005fad2569d52de741a1 = L.circle(
                 [-8.84, 13.23],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_68d266978ba5c8099f8d6e92e97e3273.bindTooltip(
+            circle_5e09415449a5005fad2569d52de741a1.bindTooltip(
                 `<div>
                      Country: angola<br>PM2.5: 9.33 µg/m³
                  </div>`,
@@ -125,13 +136,13 @@
             );
         
     
-            var circle_6e3a67a33fd1ec1906dda6f926bd501c = L.circle(
+            var circle_9c90ccff84613f06c3963e836cc53c06 = L.circle(
                 [17.12, -61.85],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_6e3a67a33fd1ec1906dda6f926bd501c.bindTooltip(
+            circle_9c90ccff84613f06c3963e836cc53c06.bindTooltip(
                 `<div>
                      Country: antigua and barbuda<br>PM2.5: 2.72 µg/m³
                  </div>`,
@@ -139,13 +150,13 @@
             );
         
     
-            var circle_2cf538fe6c35fc26ee3b0671a9312f09 = L.circle(
+            var circle_93e272bd686df37cd12123ebca985cd0 = L.circle(
                 [-34.59, -58.67],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_2cf538fe6c35fc26ee3b0671a9312f09.bindTooltip(
+            circle_93e272bd686df37cd12123ebca985cd0.bindTooltip(
                 `<div>
                      Country: argentina<br>PM2.5: 4.03 µg/m³
                  </div>`,
@@ -153,13 +164,13 @@
             );
         
     
-            var circle_fd8e285e00c7a1c850ebfc8bfffbffb7 = L.circle(
+            var circle_524a3db70069afdb2a5180bca9c3eae3 = L.circle(
                 [40.18, 44.51],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_fd8e285e00c7a1c850ebfc8bfffbffb7.bindTooltip(
+            circle_524a3db70069afdb2a5180bca9c3eae3.bindTooltip(
                 `<div>
                      Country: armenia<br>PM2.5: 6.86 µg/m³
                  </div>`,
@@ -167,13 +178,13 @@
             );
         
     
-            var circle_8c69fd4629c21ccab0f4622e7c477188 = L.circle(
+            var circle_ba5bae4540f27bada63feb742fc8a77d = L.circle(
                 [-35.28, 149.22],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_8c69fd4629c21ccab0f4622e7c477188.bindTooltip(
+            circle_ba5bae4540f27bada63feb742fc8a77d.bindTooltip(
                 `<div>
                      Country: australia<br>PM2.5: 2.51 µg/m³
                  </div>`,
@@ -181,13 +192,13 @@
             );
         
     
-            var circle_b230cab67a9cb1503a7a89f3dff90bdb = L.circle(
+            var circle_3d5da291ea57a3488d6df85549af476a = L.circle(
                 [48.2, 16.37],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_b230cab67a9cb1503a7a89f3dff90bdb.bindTooltip(
+            circle_3d5da291ea57a3488d6df85549af476a.bindTooltip(
                 `<div>
                      Country: austria<br>PM2.5: 9.19 µg/m³
                  </div>`,
@@ -195,13 +206,13 @@
             );
         
     
-            var circle_334592539c2e7d66b53764d5c9c68612 = L.circle(
+            var circle_c2b9979b003ad564fbedf9a01872568c = L.circle(
                 [40.4, 49.88],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_334592539c2e7d66b53764d5c9c68612.bindTooltip(
+            circle_c2b9979b003ad564fbedf9a01872568c.bindTooltip(
                 `<div>
                      Country: azerbaijan<br>PM2.5: 7.47 µg/m³
                  </div>`,
@@ -209,13 +220,13 @@
             );
         
     
-            var circle_6da7194d1fe27d8e1a329a51464f0e91 = L.circle(
+            var circle_006dc9da1fcc279ae30940ab05de3130 = L.circle(
                 [26.24, 50.58],
-                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_6da7194d1fe27d8e1a329a51464f0e91.bindTooltip(
+            circle_006dc9da1fcc279ae30940ab05de3130.bindTooltip(
                 `<div>
                      Country: bahrain<br>PM2.5: 49.43 µg/m³
                  </div>`,
@@ -223,13 +234,13 @@
             );
         
     
-            var circle_ef2d0222734f8e960d874204a75a1a94 = L.circle(
+            var circle_c9082e72f33791aa50972d07123c255a = L.circle(
                 [23.72, 90.41],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_ef2d0222734f8e960d874204a75a1a94.bindTooltip(
+            circle_c9082e72f33791aa50972d07123c255a.bindTooltip(
                 `<div>
                      Country: bangladesh<br>PM2.5: 140.27 µg/m³
                  </div>`,
@@ -237,13 +248,13 @@
             );
         
     
-            var circle_ddfbc3555cd46329d80b9588c2ab24b8 = L.circle(
+            var circle_b26079ebaeff9a1d2ecfb3d0f6fbc1d6 = L.circle(
                 [13.1, -59.61999999999999],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_ddfbc3555cd46329d80b9588c2ab24b8.bindTooltip(
+            circle_b26079ebaeff9a1d2ecfb3d0f6fbc1d6.bindTooltip(
                 `<div>
                      Country: barbados<br>PM2.5: 3.04 µg/m³
                  </div>`,
@@ -251,13 +262,13 @@
             );
         
     
-            var circle_15b8b16b6cc6f6c054deffb9a8161ee2 = L.circle(
+            var circle_e64d5cac8622371b19ee6d7e84e44bdb = L.circle(
                 [53.9, 27.569999999999997],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_15b8b16b6cc6f6c054deffb9a8161ee2.bindTooltip(
+            circle_e64d5cac8622371b19ee6d7e84e44bdb.bindTooltip(
                 `<div>
                      Country: belarus<br>PM2.5: 5.30 µg/m³
                  </div>`,
@@ -265,13 +276,13 @@
             );
         
     
-            var circle_e7042453e7a09754f390cd62aa9483ac = L.circle(
+            var circle_29951bdd8ce6c7eacd5ca5a36c28f2da = L.circle(
                 [51.03209621993127, 4.388591065292096],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_e7042453e7a09754f390cd62aa9483ac.bindTooltip(
+            circle_29951bdd8ce6c7eacd5ca5a36c28f2da.bindTooltip(
                 `<div>
                      Country: belgium<br>PM2.5: 6.66 µg/m³
                  </div>`,
@@ -279,13 +290,13 @@
             );
         
     
-            var circle_39b52bc79b9751eb097896be594e3539 = L.circle(
+            var circle_1f0d8ddc4dfab683c02acd9004ebba04 = L.circle(
                 [17.25, -88.77],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_39b52bc79b9751eb097896be594e3539.bindTooltip(
+            circle_1f0d8ddc4dfab683c02acd9004ebba04.bindTooltip(
                 `<div>
                      Country: belize<br>PM2.5: 2.40 µg/m³
                  </div>`,
@@ -293,13 +304,13 @@
             );
         
     
-            var circle_ddd3c721491b2d905452bc22f6c4ce98 = L.circle(
+            var circle_fcf192ed6acb780b98f86049441c87a7 = L.circle(
                 [6.48, 2.62],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_ddd3c721491b2d905452bc22f6c4ce98.bindTooltip(
+            circle_fcf192ed6acb780b98f86049441c87a7.bindTooltip(
                 `<div>
                      Country: benin<br>PM2.5: 21.33 µg/m³
                  </div>`,
@@ -307,13 +318,13 @@
             );
         
     
-            var circle_ac8befdfa0af877f3fc3d8baa4cd3f23 = L.circle(
+            var circle_b40a369ebdc3a31d6e34aef363033a97 = L.circle(
                 [27.480000000000004, 89.6],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_ac8befdfa0af877f3fc3d8baa4cd3f23.bindTooltip(
+            circle_b40a369ebdc3a31d6e34aef363033a97.bindTooltip(
                 `<div>
                      Country: bhutan<br>PM2.5: 9.95 µg/m³
                  </div>`,
@@ -321,13 +332,13 @@
             );
         
     
-            var circle_e47acc4054830664064a7717b898925e = L.circle(
+            var circle_95fa2b81ee68410b4047c8e045a37bce = L.circle(
                 [-24.65, 25.91],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_e47acc4054830664064a7717b898925e.bindTooltip(
+            circle_95fa2b81ee68410b4047c8e045a37bce.bindTooltip(
                 `<div>
                      Country: botswana<br>PM2.5: 9.54 µg/m³
                  </div>`,
@@ -335,13 +346,13 @@
             );
         
     
-            var circle_b03c771a234065db14e10d11368d87da = L.circle(
+            var circle_981aabd79eabed2792c335e5562e2d15 = L.circle(
                 [-2.08, -58.17],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_b03c771a234065db14e10d11368d87da.bindTooltip(
+            circle_981aabd79eabed2792c335e5562e2d15.bindTooltip(
                 `<div>
                      Country: brazil<br>PM2.5: 4.79 µg/m³
                  </div>`,
@@ -349,13 +360,13 @@
             );
         
     
-            var circle_a45ba5f47ec302fa810c946b9a8df6fb = L.circle(
+            var circle_5dcce48d39db0128e47b73be6d754e68 = L.circle(
                 [43.250394431554525, 23.75582366589327],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_a45ba5f47ec302fa810c946b9a8df6fb.bindTooltip(
+            circle_5dcce48d39db0128e47b73be6d754e68.bindTooltip(
                 `<div>
                      Country: bulgaria<br>PM2.5: 11.48 µg/m³
                  </div>`,
@@ -363,13 +374,13 @@
             );
         
     
-            var circle_a10a707470f6e7579b751262e61e9411 = L.circle(
+            var circle_5403f74ce7bdb15f372d0cee4cad4077 = L.circle(
                 [12.37, -1.52],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_a10a707470f6e7579b751262e61e9411.bindTooltip(
+            circle_5403f74ce7bdb15f372d0cee4cad4077.bindTooltip(
                 `<div>
                      Country: burkina faso<br>PM2.5: 94.38 µg/m³
                  </div>`,
@@ -377,13 +388,13 @@
             );
         
     
-            var circle_db5dde614755d115552e10be504a4bb5 = L.circle(
+            var circle_6a68fcc847e5cd8b026347f25d2c28a5 = L.circle(
                 [-3.38, 29.36],
-                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_db5dde614755d115552e10be504a4bb5.bindTooltip(
+            circle_6a68fcc847e5cd8b026347f25d2c28a5.bindTooltip(
                 `<div>
                      Country: burundi<br>PM2.5: 26.21 µg/m³
                  </div>`,
@@ -391,13 +402,13 @@
             );
         
     
-            var circle_67a4fa43bba634590d9fa917d39d07e9 = L.circle(
+            var circle_88f7b7c5fd9fe59f78cd242716da9272 = L.circle(
                 [11.55, 104.92],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_67a4fa43bba634590d9fa917d39d07e9.bindTooltip(
+            circle_88f7b7c5fd9fe59f78cd242716da9272.bindTooltip(
                 `<div>
                      Country: cambodia<br>PM2.5: 53.72 µg/m³
                  </div>`,
@@ -405,13 +416,13 @@
             );
         
     
-            var circle_548755d49f126eb34803e04c2734ee5a = L.circle(
+            var circle_4455bc8dc9233a7147d1b4ef26b33609 = L.circle(
                 [5.3511920529801325, 10.423046357615894],
-                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_548755d49f126eb34803e04c2734ee5a.bindTooltip(
+            circle_4455bc8dc9233a7147d1b4ef26b33609.bindTooltip(
                 `<div>
                      Country: cameroon<br>PM2.5: 34.05 µg/m³
                  </div>`,
@@ -419,13 +430,13 @@
             );
         
     
-            var circle_0a1696391ed1370ec6add835bf9e27e0 = L.circle(
+            var circle_d004387c60b43a68935f4910264687ea = L.circle(
                 [45.42, -75.7],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_0a1696391ed1370ec6add835bf9e27e0.bindTooltip(
+            circle_d004387c60b43a68935f4910264687ea.bindTooltip(
                 `<div>
                      Country: canada<br>PM2.5: 4.37 µg/m³
                  </div>`,
@@ -433,13 +444,13 @@
             );
         
     
-            var circle_264da31cac3579cf4818dafb0c3b206d = L.circle(
+            var circle_54cadaccacea0f11ad058a9ab6c1f659 = L.circle(
                 [14.93, -23.51],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_264da31cac3579cf4818dafb0c3b206d.bindTooltip(
+            circle_54cadaccacea0f11ad058a9ab6c1f659.bindTooltip(
                 `<div>
                      Country: cape verde<br>PM2.5: 50.78 µg/m³
                  </div>`,
@@ -447,13 +458,13 @@
             );
         
     
-            var circle_40a4cf734e9e59b5f39c48c3d7f761aa = L.circle(
+            var circle_5017e5947474d9036217c8210920f3b1 = L.circle(
                 [4.37, 18.58],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_40a4cf734e9e59b5f39c48c3d7f761aa.bindTooltip(
+            circle_5017e5947474d9036217c8210920f3b1.bindTooltip(
                 `<div>
                      Country: central african republic<br>PM2.5: 15.78 µg/m³
                  </div>`,
@@ -461,13 +472,13 @@
             );
         
     
-            var circle_4726e95384f267284b18cb947e0cfd2b = L.circle(
+            var circle_c39817b6bf658ae32529c30624eec9a6 = L.circle(
                 [12.11, 15.05],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_4726e95384f267284b18cb947e0cfd2b.bindTooltip(
+            circle_c39817b6bf658ae32529c30624eec9a6.bindTooltip(
                 `<div>
                      Country: chad<br>PM2.5: 76.43 µg/m³
                  </div>`,
@@ -475,13 +486,13 @@
             );
         
     
-            var circle_a3f822acad33a510e3aa668c73f35375 = L.circle(
+            var circle_9f725956d4595d6935ccb98554cf708c = L.circle(
                 [-33.45, -70.67],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_a3f822acad33a510e3aa668c73f35375.bindTooltip(
+            circle_9f725956d4595d6935ccb98554cf708c.bindTooltip(
                 `<div>
                      Country: chile<br>PM2.5: 55.82 µg/m³
                  </div>`,
@@ -489,13 +500,13 @@
             );
         
     
-            var circle_fff129848af0486a8974d94f3e5b1a41 = L.circle(
+            var circle_0860726f0616cc37a1abcbd6da15ced5 = L.circle(
                 [39.93, 116.39],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_fff129848af0486a8974d94f3e5b1a41.bindTooltip(
+            circle_0860726f0616cc37a1abcbd6da15ced5.bindTooltip(
                 `<div>
                      Country: china<br>PM2.5: 214.38 µg/m³
                  </div>`,
@@ -503,13 +514,13 @@
             );
         
     
-            var circle_701c768cef39ec1e658c2b5ef8dc0f5e = L.circle(
+            var circle_cc4205583b4b623dc882aa283f7b3b64 = L.circle(
                 [-11.7, 43.24],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_701c768cef39ec1e658c2b5ef8dc0f5e.bindTooltip(
+            circle_cc4205583b4b623dc882aa283f7b3b64.bindTooltip(
                 `<div>
                      Country: comoros<br>PM2.5: 2.33 µg/m³
                  </div>`,
@@ -517,13 +528,13 @@
             );
         
     
-            var circle_861c5a4ca3587f2b301d7a41bdad6d4d = L.circle(
+            var circle_8ef96ae0d21564f4b40a9b16bfb6bbd3 = L.circle(
                 [9.956158940397351, -84.08430463576158],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_861c5a4ca3587f2b301d7a41bdad6d4d.bindTooltip(
+            circle_8ef96ae0d21564f4b40a9b16bfb6bbd3.bindTooltip(
                 `<div>
                      Country: costa rica<br>PM2.5: 10.16 µg/m³
                  </div>`,
@@ -531,13 +542,13 @@
             );
         
     
-            var circle_19a507c6d8dad9e0a30a412453716666 = L.circle(
+            var circle_907ee6855b1422d886a6e1f42de65e65 = L.circle(
                 [45.8, 16.0],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_19a507c6d8dad9e0a30a412453716666.bindTooltip(
+            circle_907ee6855b1422d886a6e1f42de65e65.bindTooltip(
                 `<div>
                      Country: croatia<br>PM2.5: 20.93 µg/m³
                  </div>`,
@@ -545,13 +556,13 @@
             );
         
     
-            var circle_8c58b0fdf66f2ad9b5a05c29e0422138 = L.circle(
+            var circle_9acb232ba1f0313f6201c375352c7e73 = L.circle(
                 [35.17, 33.37],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_8c58b0fdf66f2ad9b5a05c29e0422138.bindTooltip(
+            circle_9acb232ba1f0313f6201c375352c7e73.bindTooltip(
                 `<div>
                      Country: cyprus<br>PM2.5: 12.11 µg/m³
                  </div>`,
@@ -559,13 +570,13 @@
             );
         
     
-            var circle_f38021f825699e8bb1d0b2f5e64f9b06 = L.circle(
+            var circle_3d8546dacfae7c4acd8f8ba6a0d5fe5b = L.circle(
                 [50.08, 14.470000000000002],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_f38021f825699e8bb1d0b2f5e64f9b06.bindTooltip(
+            circle_3d8546dacfae7c4acd8f8ba6a0d5fe5b.bindTooltip(
                 `<div>
                      Country: czech republic<br>PM2.5: 13.39 µg/m³
                  </div>`,
@@ -573,13 +584,27 @@
             );
         
     
-            var circle_85f5e98858fae8085044ff88255e5ab0 = L.circle(
-                [55.67, 12.58],
+            var circle_834db81af0bbec8146cbfd1cfc75882f = L.circle(
+                [-4.3, 15.3],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_85f5e98858fae8085044ff88255e5ab0.bindTooltip(
+            circle_834db81af0bbec8146cbfd1cfc75882f.bindTooltip(
+                `<div>
+                     Country: democratic republic of the congo<br>PM2.5: 19.80 µg/m³
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2be7258217a79928cc315c8f0abea275 = L.circle(
+                [55.67, 12.58],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
+        
+    
+            circle_2be7258217a79928cc315c8f0abea275.bindTooltip(
                 `<div>
                      Country: denmark<br>PM2.5: 5.56 µg/m³
                  </div>`,
@@ -587,13 +612,13 @@
             );
         
     
-            var circle_003deaefea00ce8950d20ed2e2e074b0 = L.circle(
+            var circle_30656b3e8c2c4f1ede15c22dd33b5b21 = L.circle(
                 [11.6, 43.15],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_003deaefea00ce8950d20ed2e2e074b0.bindTooltip(
+            circle_30656b3e8c2c4f1ede15c22dd33b5b21.bindTooltip(
                 `<div>
                      Country: djibouti<br>PM2.5: 19.93 µg/m³
                  </div>`,
@@ -601,13 +626,13 @@
             );
         
     
-            var circle_85a77615ddc4b670dbfdbd436891b87a = L.circle(
+            var circle_fec4616178418c2ebd19e631d46daaeb = L.circle(
                 [18.47, -69.9],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_85a77615ddc4b670dbfdbd436891b87a.bindTooltip(
+            circle_fec4616178418c2ebd19e631d46daaeb.bindTooltip(
                 `<div>
                      Country: dominican republic<br>PM2.5: 6.48 µg/m³
                  </div>`,
@@ -615,13 +640,27 @@
             );
         
     
-            var circle_0dc613ae560f2a54c473c09babc6444e = L.circle(
-                [-0.22, -78.5],
+            var circle_fb50545eb6db550d630e867ec924de9e = L.circle(
+                [-8.56, 125.57],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_0dc613ae560f2a54c473c09babc6444e.bindTooltip(
+            circle_fb50545eb6db550d630e867ec924de9e.bindTooltip(
+                `<div>
+                     Country: east timor<br>PM2.5: 4.08 µg/m³
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9cd75a99b2bd78d87ebbba632df7330d = L.circle(
+                [-0.22, -78.5],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
+        
+    
+            circle_9cd75a99b2bd78d87ebbba632df7330d.bindTooltip(
                 `<div>
                      Country: ecuador<br>PM2.5: 21.63 µg/m³
                  </div>`,
@@ -629,13 +668,13 @@
             );
         
     
-            var circle_8b66d788aff0b2bd41d8e9ececac0751 = L.circle(
+            var circle_0e6310434748bcbe12198084f3e2d695 = L.circle(
                 [30.05, 31.25],
-                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_8b66d788aff0b2bd41d8e9ececac0751.bindTooltip(
+            circle_0e6310434748bcbe12198084f3e2d695.bindTooltip(
                 `<div>
                      Country: egypt<br>PM2.5: 26.85 µg/m³
                  </div>`,
@@ -643,13 +682,13 @@
             );
         
     
-            var circle_a268afc1eb204d75fd2a74dac000bd34 = L.circle(
+            var circle_ae05ae90c9041d4205187af13a215fbb = L.circle(
                 [13.71, -89.2],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_a268afc1eb204d75fd2a74dac000bd34.bindTooltip(
+            circle_ae05ae90c9041d4205187af13a215fbb.bindTooltip(
                 `<div>
                      Country: el salvador<br>PM2.5: 7.99 µg/m³
                  </div>`,
@@ -657,13 +696,13 @@
             );
         
     
-            var circle_f4e6834e9522b358cb6206127170823e = L.circle(
+            var circle_37d8708211fc86e430e0607245ca4001 = L.circle(
                 [3.75, 8.78],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_f4e6834e9522b358cb6206127170823e.bindTooltip(
+            circle_37d8708211fc86e430e0607245ca4001.bindTooltip(
                 `<div>
                      Country: equatorial guinea<br>PM2.5: 6.85 µg/m³
                  </div>`,
@@ -671,13 +710,13 @@
             );
         
     
-            var circle_4f1abe295c9779d5fe0237380319965a = L.circle(
+            var circle_caee93fc411f4101c3851fd2be7db557 = L.circle(
                 [15.33, 38.93],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_4f1abe295c9779d5fe0237380319965a.bindTooltip(
+            circle_caee93fc411f4101c3851fd2be7db557.bindTooltip(
                 `<div>
                      Country: eritrea<br>PM2.5: 19.81 µg/m³
                  </div>`,
@@ -685,13 +724,13 @@
             );
         
     
-            var circle_fb8b925970d1294e39b79dba84142ae0 = L.circle(
+            var circle_aefb468afdccec7ddcc3ea96c78fbbeb = L.circle(
                 [59.43, 24.73],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_fb8b925970d1294e39b79dba84142ae0.bindTooltip(
+            circle_aefb468afdccec7ddcc3ea96c78fbbeb.bindTooltip(
                 `<div>
                      Country: estonia<br>PM2.5: 3.20 µg/m³
                  </div>`,
@@ -699,13 +738,13 @@
             );
         
     
-            var circle_c6fdf67c74d2d6e46a5330271db70563 = L.circle(
+            var circle_1dd5d3b94610c2aece258c5d1b943a9a = L.circle(
                 [9.03, 38.7],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_c6fdf67c74d2d6e46a5330271db70563.bindTooltip(
+            circle_1dd5d3b94610c2aece258c5d1b943a9a.bindTooltip(
                 `<div>
                      Country: ethiopia<br>PM2.5: 73.12 µg/m³
                  </div>`,
@@ -713,13 +752,41 @@
             );
         
     
-            var circle_1bc14fa205c23a75224f53f8e89aceed = L.circle(
-                [60.18, 24.93],
+            var circle_585a5bd2fff09224bbe9141554036c28 = L.circle(
+                [6.920000000000001, 158.15],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_1bc14fa205c23a75224f53f8e89aceed.bindTooltip(
+            circle_585a5bd2fff09224bbe9141554036c28.bindTooltip(
+                `<div>
+                     Country: federated states of micronesia<br>PM2.5: 1.55 µg/m³
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_cf34d95fff0ed2677aad4c2bcabe3753 = L.circle(
+                [-18.13, 178.42],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
+        
+    
+            circle_cf34d95fff0ed2677aad4c2bcabe3753.bindTooltip(
+                `<div>
+                     Country: fiji<br>PM2.5: 3.18 µg/m³
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_3371e983fa114b8754066ab1c7ca355c = L.circle(
+                [60.18, 24.93],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
+        
+    
+            circle_3371e983fa114b8754066ab1c7ca355c.bindTooltip(
                 `<div>
                      Country: finland<br>PM2.5: 10.43 µg/m³
                  </div>`,
@@ -727,13 +794,13 @@
             );
         
     
-            var circle_fe79eaaf1ebc8316e327de074bf516a9 = L.circle(
+            var circle_adffae3631659c08c9dd0a5abc0db393 = L.circle(
                 [48.87, 2.33],
-                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_fe79eaaf1ebc8316e327de074bf516a9.bindTooltip(
+            circle_adffae3631659c08c9dd0a5abc0db393.bindTooltip(
                 `<div>
                      Country: france<br>PM2.5: 28.65 µg/m³
                  </div>`,
@@ -741,13 +808,13 @@
             );
         
     
-            var circle_9876ffdb860d8e57febd2974de1d0e7f = L.circle(
+            var circle_eb561d180074b1c788314d8e4ae78a6d = L.circle(
                 [0.38, 9.45],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_9876ffdb860d8e57febd2974de1d0e7f.bindTooltip(
+            circle_eb561d180074b1c788314d8e4ae78a6d.bindTooltip(
                 `<div>
                      Country: gabon<br>PM2.5: 4.34 µg/m³
                  </div>`,
@@ -755,13 +822,13 @@
             );
         
     
-            var circle_fe0884c40200240821e4d7d1215e5a27 = L.circle(
+            var circle_5ebe34ad25bdddf9c7bf6d536ac9e530 = L.circle(
                 [41.73, 44.79],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_fe0884c40200240821e4d7d1215e5a27.bindTooltip(
+            circle_5ebe34ad25bdddf9c7bf6d536ac9e530.bindTooltip(
                 `<div>
                      Country: georgia<br>PM2.5: 17.87 µg/m³
                  </div>`,
@@ -769,13 +836,13 @@
             );
         
     
-            var circle_468fe823fc957b5f035937851d23cbdc = L.circle(
+            var circle_cf036958bb3b897d42ba09002d270325 = L.circle(
                 [52.52, 13.4],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_468fe823fc957b5f035937851d23cbdc.bindTooltip(
+            circle_cf036958bb3b897d42ba09002d270325.bindTooltip(
                 `<div>
                      Country: germany<br>PM2.5: 9.87 µg/m³
                  </div>`,
@@ -783,13 +850,13 @@
             );
         
     
-            var circle_d88cd2b8f00bc30659e5d73432ef3a16 = L.circle(
+            var circle_a16ef433ad1bdfbad936673d08da8409 = L.circle(
                 [5.55, -0.22],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_d88cd2b8f00bc30659e5d73432ef3a16.bindTooltip(
+            circle_a16ef433ad1bdfbad936673d08da8409.bindTooltip(
                 `<div>
                      Country: ghana<br>PM2.5: 14.43 µg/m³
                  </div>`,
@@ -797,13 +864,13 @@
             );
         
     
-            var circle_b76c6e6097f0af567af9a8acbbb46e9c = L.circle(
+            var circle_9054d4bbc8db481b201978d4a1076c7d = L.circle(
                 [37.98, 23.72],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_b76c6e6097f0af567af9a8acbbb46e9c.bindTooltip(
+            circle_9054d4bbc8db481b201978d4a1076c7d.bindTooltip(
                 `<div>
                      Country: greece<br>PM2.5: 12.13 µg/m³
                  </div>`,
@@ -811,13 +878,13 @@
             );
         
     
-            var circle_60e924d2a7877d40d32becb6efbcd4d9 = L.circle(
+            var circle_b9f086d615ce2b9ba207dcbe1f684e94 = L.circle(
                 [12.05, -61.75],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_60e924d2a7877d40d32becb6efbcd4d9.bindTooltip(
+            circle_b9f086d615ce2b9ba207dcbe1f684e94.bindTooltip(
                 `<div>
                      Country: grenada<br>PM2.5: 2.79 µg/m³
                  </div>`,
@@ -825,13 +892,13 @@
             );
         
     
-            var circle_b31add1523cdfc1a9d20659c51adcf16 = L.circle(
+            var circle_48007d4dc2512b071061851c14c75111 = L.circle(
                 [14.62, -90.53],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_b31add1523cdfc1a9d20659c51adcf16.bindTooltip(
+            circle_48007d4dc2512b071061851c14c75111.bindTooltip(
                 `<div>
                      Country: guatemala<br>PM2.5: 17.45 µg/m³
                  </div>`,
@@ -839,13 +906,13 @@
             );
         
     
-            var circle_28042227fe6c9fa4746af832abc015b2 = L.circle(
+            var circle_4b7bc3697ab4f06bdd430229d03102ee = L.circle(
                 [9.51, -13.71],
-                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_28042227fe6c9fa4746af832abc015b2.bindTooltip(
+            circle_4b7bc3697ab4f06bdd430229d03102ee.bindTooltip(
                 `<div>
                      Country: guinea<br>PM2.5: 33.96 µg/m³
                  </div>`,
@@ -853,13 +920,13 @@
             );
         
     
-            var circle_4e26148203701297ea8d2379b7961240 = L.circle(
+            var circle_04f922a5d634e4fa6230ea0534d39aff = L.circle(
                 [11.85, -15.58],
-                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_4e26148203701297ea8d2379b7961240.bindTooltip(
+            circle_04f922a5d634e4fa6230ea0534d39aff.bindTooltip(
                 `<div>
                      Country: guinea-bissau<br>PM2.5: 41.05 µg/m³
                  </div>`,
@@ -867,13 +934,13 @@
             );
         
     
-            var circle_b7568b8323dce819ea21731f77733fcf = L.circle(
+            var circle_e512134999ca49ae3d319e48da5f31a6 = L.circle(
                 [6.8, -58.17],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_b7568b8323dce819ea21731f77733fcf.bindTooltip(
+            circle_e512134999ca49ae3d319e48da5f31a6.bindTooltip(
                 `<div>
                      Country: guyana<br>PM2.5: 2.87 µg/m³
                  </div>`,
@@ -881,13 +948,13 @@
             );
         
     
-            var circle_a7d32d7a5833e46f36b1cef5a522fba6 = L.circle(
+            var circle_b94f1a4810fc03f36ab524c6eef33fe1 = L.circle(
                 [18.54, -72.34],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_a7d32d7a5833e46f36b1cef5a522fba6.bindTooltip(
+            circle_b94f1a4810fc03f36ab524c6eef33fe1.bindTooltip(
                 `<div>
                      Country: haiti<br>PM2.5: 15.00 µg/m³
                  </div>`,
@@ -895,13 +962,13 @@
             );
         
     
-            var circle_70622d063f530de98e44218eac615e75 = L.circle(
+            var circle_d9f6cfb240f4fb91450733a8e43e166e = L.circle(
                 [14.1, -87.22],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_70622d063f530de98e44218eac615e75.bindTooltip(
+            circle_d9f6cfb240f4fb91450733a8e43e166e.bindTooltip(
                 `<div>
                      Country: honduras<br>PM2.5: 2.21 µg/m³
                  </div>`,
@@ -909,13 +976,13 @@
             );
         
     
-            var circle_01576ef23f0f386d62f58aec6ca81547 = L.circle(
+            var circle_3efb833088a76a35bc6cf430f9cfeaac = L.circle(
                 [47.48892405063291, 18.9803164556962],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_01576ef23f0f386d62f58aec6ca81547.bindTooltip(
+            circle_3efb833088a76a35bc6cf430f9cfeaac.bindTooltip(
                 `<div>
                      Country: hungary<br>PM2.5: 19.55 µg/m³
                  </div>`,
@@ -923,13 +990,13 @@
             );
         
     
-            var circle_4a2c0f64786088b73b2360bf7c67ba7f = L.circle(
+            var circle_d7fb979981e56d5b94bb416451e9afa6 = L.circle(
                 [63.84430463576159, -20.695629139072846],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_4a2c0f64786088b73b2360bf7c67ba7f.bindTooltip(
+            circle_d7fb979981e56d5b94bb416451e9afa6.bindTooltip(
                 `<div>
                      Country: iceland<br>PM2.5: 0.86 µg/m³
                  </div>`,
@@ -937,13 +1004,13 @@
             );
         
     
-            var circle_7f900b56df985737537ca3e8e057db81 = L.circle(
+            var circle_39d367c3f54c50941fd6cccea91f9435 = L.circle(
                 [28.6, 77.2],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_7f900b56df985737537ca3e8e057db81.bindTooltip(
+            circle_39d367c3f54c50941fd6cccea91f9435.bindTooltip(
                 `<div>
                      Country: india<br>PM2.5: 303.89 µg/m³
                  </div>`,
@@ -951,13 +1018,13 @@
             );
         
     
-            var circle_7b62d106a7e09559d87904fafffd12d1 = L.circle(
+            var circle_56b2abcc85644844e53541ceee447876 = L.circle(
                 [-7.207827476038339, 110.64421725239616],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_7b62d106a7e09559d87904fafffd12d1.bindTooltip(
+            circle_56b2abcc85644844e53541ceee447876.bindTooltip(
                 `<div>
                      Country: indonesia<br>PM2.5: 277.10 µg/m³
                  </div>`,
@@ -965,13 +1032,13 @@
             );
         
     
-            var circle_658f6997bab39904bb74d925c4c1383f = L.circle(
+            var circle_2455aa219d519fb8007b2d6918cfadb9 = L.circle(
                 [35.807853107344634, 50.63372881355932],
-                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_658f6997bab39904bb74d925c4c1383f.bindTooltip(
+            circle_2455aa219d519fb8007b2d6918cfadb9.bindTooltip(
                 `<div>
                      Country: iran<br>PM2.5: 35.01 µg/m³
                  </div>`,
@@ -979,13 +1046,13 @@
             );
         
     
-            var circle_956657a064bd1c4a11105d6bdb50fafb = L.circle(
+            var circle_e906521d7da9482ad6448b889af176ba = L.circle(
                 [33.34, 44.39],
-                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_956657a064bd1c4a11105d6bdb50fafb.bindTooltip(
+            circle_e906521d7da9482ad6448b889af176ba.bindTooltip(
                 `<div>
                      Country: iraq<br>PM2.5: 37.87 µg/m³
                  </div>`,
@@ -993,13 +1060,13 @@
             );
         
     
-            var circle_5a89ca9a161c6d7845b6ee0411f0532a = L.circle(
+            var circle_29f3023ba577d3c1b85bf0b4ab9cab25 = L.circle(
                 [31.779999999999998, 35.23],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_5a89ca9a161c6d7845b6ee0411f0532a.bindTooltip(
+            circle_29f3023ba577d3c1b85bf0b4ab9cab25.bindTooltip(
                 `<div>
                      Country: israel<br>PM2.5: 22.49 µg/m³
                  </div>`,
@@ -1007,13 +1074,13 @@
             );
         
     
-            var circle_94da430afe050f8af645e3c967a8f13b = L.circle(
+            var circle_9ce76f4efc8e6cb56b7238cd03fa966e = L.circle(
                 [41.9, 12.48],
-                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_94da430afe050f8af645e3c967a8f13b.bindTooltip(
+            circle_9ce76f4efc8e6cb56b7238cd03fa966e.bindTooltip(
                 `<div>
                      Country: italy<br>PM2.5: 25.54 µg/m³
                  </div>`,
@@ -1021,13 +1088,13 @@
             );
         
     
-            var circle_b9a094a9cd5b7601d298227dba4d817c = L.circle(
+            var circle_ba6014093028d79835381ce9950761db = L.circle(
                 [17.97, -76.75],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_b9a094a9cd5b7601d298227dba4d817c.bindTooltip(
+            circle_ba6014093028d79835381ce9950761db.bindTooltip(
                 `<div>
                      Country: jamaica<br>PM2.5: 9.46 µg/m³
                  </div>`,
@@ -1035,13 +1102,13 @@
             );
         
     
-            var circle_265c404066414af150484f1d051785ed = L.circle(
+            var circle_d17eccd8b9377c361ac4d2306a435499 = L.circle(
                 [35.69, 139.69],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_265c404066414af150484f1d051785ed.bindTooltip(
+            circle_d17eccd8b9377c361ac4d2306a435499.bindTooltip(
                 `<div>
                      Country: japan<br>PM2.5: 14.93 µg/m³
                  </div>`,
@@ -1049,13 +1116,13 @@
             );
         
     
-            var circle_6d32c0b0e8ab8e962a0017dd6210e8ef = L.circle(
+            var circle_97de81f1798c0b383d932790584ec5c4 = L.circle(
                 [31.95, 35.93],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_6d32c0b0e8ab8e962a0017dd6210e8ef.bindTooltip(
+            circle_97de81f1798c0b383d932790584ec5c4.bindTooltip(
                 `<div>
                      Country: jordan<br>PM2.5: 21.97 µg/m³
                  </div>`,
@@ -1063,13 +1130,13 @@
             );
         
     
-            var circle_3bd22af3489b49958f00650ae8fb741a = L.circle(
+            var circle_82c090e2f7a44f468b043367707f25c2 = L.circle(
                 [51.18, 71.43],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_3bd22af3489b49958f00650ae8fb741a.bindTooltip(
+            circle_82c090e2f7a44f468b043367707f25c2.bindTooltip(
                 `<div>
                      Country: kazakhstan<br>PM2.5: 6.36 µg/m³
                  </div>`,
@@ -1077,13 +1144,13 @@
             );
         
     
-            var circle_a2e5bbe3ef83582d65e5210046efb42c = L.circle(
+            var circle_4fe986bb6fc79e963a101b27a7dd359e = L.circle(
                 [-1.28, 36.82],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_a2e5bbe3ef83582d65e5210046efb42c.bindTooltip(
+            circle_4fe986bb6fc79e963a101b27a7dd359e.bindTooltip(
                 `<div>
                      Country: kenya<br>PM2.5: 18.84 µg/m³
                  </div>`,
@@ -1091,13 +1158,13 @@
             );
         
     
-            var circle_25448177a2f5cca5c56942b37fc7b7c9 = L.circle(
+            var circle_89ca6d08d5a9dd838ee398cef3bbfc7f = L.circle(
                 [29.37, 47.96],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_25448177a2f5cca5c56942b37fc7b7c9.bindTooltip(
+            circle_89ca6d08d5a9dd838ee398cef3bbfc7f.bindTooltip(
                 `<div>
                      Country: kuwait<br>PM2.5: 56.53 µg/m³
                  </div>`,
@@ -1105,13 +1172,27 @@
             );
         
     
-            var circle_5a1526c67aa6f4ea222ae72c53eb4ce4 = L.circle(
-                [56.95, 24.1],
+            var circle_248af9b675c58ccedf4bb57b2ef64300 = L.circle(
+                [42.87, 74.6],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_5a1526c67aa6f4ea222ae72c53eb4ce4.bindTooltip(
+            circle_248af9b675c58ccedf4bb57b2ef64300.bindTooltip(
+                `<div>
+                     Country: kyrgyzstan<br>PM2.5: 7.65 µg/m³
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ae0f1a9971ad79cea8b1d93792f04a4a = L.circle(
+                [56.95, 24.1],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
+        
+    
+            circle_ae0f1a9971ad79cea8b1d93792f04a4a.bindTooltip(
                 `<div>
                      Country: latvia<br>PM2.5: 8.74 µg/m³
                  </div>`,
@@ -1119,13 +1200,13 @@
             );
         
     
-            var circle_550946606978e7aabd8b529462924c70 = L.circle(
+            var circle_60d18eb570e9c6d94ed16ce332c92d69 = L.circle(
                 [33.87, 35.51],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_550946606978e7aabd8b529462924c70.bindTooltip(
+            circle_60d18eb570e9c6d94ed16ce332c92d69.bindTooltip(
                 `<div>
                      Country: lebanon<br>PM2.5: 17.17 µg/m³
                  </div>`,
@@ -1133,13 +1214,13 @@
             );
         
     
-            var circle_73286607ced7d1fd3a64500f96ec9030 = L.circle(
+            var circle_41b94625f6689c65a3c6e1fd9ffb46cb = L.circle(
                 [-29.319999999999997, 27.480000000000004],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_73286607ced7d1fd3a64500f96ec9030.bindTooltip(
+            circle_41b94625f6689c65a3c6e1fd9ffb46cb.bindTooltip(
                 `<div>
                      Country: lesotho<br>PM2.5: 13.81 µg/m³
                  </div>`,
@@ -1147,13 +1228,13 @@
             );
         
     
-            var circle_228bd3ecaa9bab4e0beb03ea9270d3f7 = L.circle(
+            var circle_9488360e38482b24f735a6a147668ad3 = L.circle(
                 [6.31, -10.8],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_228bd3ecaa9bab4e0beb03ea9270d3f7.bindTooltip(
+            circle_9488360e38482b24f735a6a147668ad3.bindTooltip(
                 `<div>
                      Country: liberia<br>PM2.5: 9.29 µg/m³
                  </div>`,
@@ -1161,13 +1242,13 @@
             );
         
     
-            var circle_662fe60e9889e98ddc029181ed878d13 = L.circle(
+            var circle_4c41c34afbf1ecc190a253bcbd11f1a9 = L.circle(
                 [54.68, 25.32],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_662fe60e9889e98ddc029181ed878d13.bindTooltip(
+            circle_4c41c34afbf1ecc190a253bcbd11f1a9.bindTooltip(
                 `<div>
                      Country: lithuania<br>PM2.5: 5.40 µg/m³
                  </div>`,
@@ -1175,13 +1256,13 @@
             );
         
     
-            var circle_2b4ecca5d6c344e35ffa16133bff2642 = L.circle(
+            var circle_a5b2aad31f4198ed15b7a7d748e94d74 = L.circle(
                 [49.61, 6.13],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_2b4ecca5d6c344e35ffa16133bff2642.bindTooltip(
+            circle_a5b2aad31f4198ed15b7a7d748e94d74.bindTooltip(
                 `<div>
                      Country: luxembourg<br>PM2.5: 5.56 µg/m³
                  </div>`,
@@ -1189,13 +1270,13 @@
             );
         
     
-            var circle_1a0e3222b543db6358e4a39a780b6abf = L.circle(
+            var circle_7c3a80ccf3261667cb599a22f8e195ed = L.circle(
                 [-21.645, 46.98500000000001],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_1a0e3222b543db6358e4a39a780b6abf.bindTooltip(
+            circle_7c3a80ccf3261667cb599a22f8e195ed.bindTooltip(
                 `<div>
                      Country: madagascar<br>PM2.5: 8.58 µg/m³
                  </div>`,
@@ -1203,13 +1284,13 @@
             );
         
     
-            var circle_ab98fe69bba2818d69d644809cfbfaf6 = L.circle(
+            var circle_e144fb1a63b89f8bbc3acf3f2e347065 = L.circle(
                 [-13.98, 33.78],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_ab98fe69bba2818d69d644809cfbfaf6.bindTooltip(
+            circle_e144fb1a63b89f8bbc3acf3f2e347065.bindTooltip(
                 `<div>
                      Country: malawi<br>PM2.5: 4.53 µg/m³
                  </div>`,
@@ -1217,13 +1298,13 @@
             );
         
     
-            var circle_3796f405f6324d8d3e7b0d2b45beb90a = L.circle(
+            var circle_2b569a4058932b9ce7dad7d606cf3451 = L.circle(
                 [3.17, 101.7],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_3796f405f6324d8d3e7b0d2b45beb90a.bindTooltip(
+            circle_2b569a4058932b9ce7dad7d606cf3451.bindTooltip(
                 `<div>
                      Country: malaysia<br>PM2.5: 128.60 µg/m³
                  </div>`,
@@ -1231,13 +1312,13 @@
             );
         
     
-            var circle_73deb8355ac755ea72daafc4dbbf1086 = L.circle(
+            var circle_c1da01a21275f63d92a889782cfdc55e = L.circle(
                 [6.026225165562914, 73.28205298013245],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_73deb8355ac755ea72daafc4dbbf1086.bindTooltip(
+            circle_c1da01a21275f63d92a889782cfdc55e.bindTooltip(
                 `<div>
                      Country: maldives<br>PM2.5: 6.45 µg/m³
                  </div>`,
@@ -1245,13 +1326,13 @@
             );
         
     
-            var circle_f48bc7de96ddacdd738fd2678a7593ff = L.circle(
+            var circle_21bf279ba616910ca9a3af9a0814d4bb = L.circle(
                 [12.65, -8.0],
-                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_f48bc7de96ddacdd738fd2678a7593ff.bindTooltip(
+            circle_21bf279ba616910ca9a3af9a0814d4bb.bindTooltip(
                 `<div>
                      Country: mali<br>PM2.5: 43.64 µg/m³
                  </div>`,
@@ -1259,13 +1340,13 @@
             );
         
     
-            var circle_3ec4f27bb26085ff2744a18ae8a80930 = L.circle(
+            var circle_fbd55ae8db6fe425dd8a733119f7e647 = L.circle(
                 [35.9, 14.509999999999998],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_3ec4f27bb26085ff2744a18ae8a80930.bindTooltip(
+            circle_fbd55ae8db6fe425dd8a733119f7e647.bindTooltip(
                 `<div>
                      Country: malta<br>PM2.5: 17.75 µg/m³
                  </div>`,
@@ -1273,13 +1354,13 @@
             );
         
     
-            var circle_0edf85872547c177565d728164c2d1af = L.circle(
+            var circle_cb9e5d4469eb58ebda36a26d104a92ec = L.circle(
                 [18.09, -15.98],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_0edf85872547c177565d728164c2d1af.bindTooltip(
+            circle_cb9e5d4469eb58ebda36a26d104a92ec.bindTooltip(
                 `<div>
                      Country: mauritania<br>PM2.5: 95.21 µg/m³
                  </div>`,
@@ -1287,13 +1368,13 @@
             );
         
     
-            var circle_19a41ac2c11060703041371fce7857e2 = L.circle(
+            var circle_39d04ff6760fd72f3cd31cd02d59ab11 = L.circle(
                 [-20.16, 57.5],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_19a41ac2c11060703041371fce7857e2.bindTooltip(
+            circle_39d04ff6760fd72f3cd31cd02d59ab11.bindTooltip(
                 `<div>
                      Country: mauritius<br>PM2.5: 3.17 µg/m³
                  </div>`,
@@ -1301,13 +1382,13 @@
             );
         
     
-            var circle_4c9ec3aabcae5d2498dd3eb5d131a97d = L.circle(
+            var circle_f25d5425144723047817de9c5120ddc2 = L.circle(
                 [19.43, -99.13],
-                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_4c9ec3aabcae5d2498dd3eb5d131a97d.bindTooltip(
+            circle_f25d5425144723047817de9c5120ddc2.bindTooltip(
                 `<div>
                      Country: mexico<br>PM2.5: 48.92 µg/m³
                  </div>`,
@@ -1315,13 +1396,13 @@
             );
         
     
-            var circle_45409ba786633f55ff62d0bc0ca90caf = L.circle(
+            var circle_034b55b6117981b1f93f4537090fbb2f = L.circle(
                 [47.92, 106.92],
-                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_45409ba786633f55ff62d0bc0ca90caf.bindTooltip(
+            circle_034b55b6117981b1f93f4537090fbb2f.bindTooltip(
                 `<div>
                      Country: mongolia<br>PM2.5: 33.46 µg/m³
                  </div>`,
@@ -1329,13 +1410,13 @@
             );
         
     
-            var circle_561144841ffb890280ab207df9766d4e = L.circle(
+            var circle_7f2bba0497b50712ad579a4ff422bdda = L.circle(
                 [42.44, 19.26],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_561144841ffb890280ab207df9766d4e.bindTooltip(
+            circle_7f2bba0497b50712ad579a4ff422bdda.bindTooltip(
                 `<div>
                      Country: montenegro<br>PM2.5: 7.80 µg/m³
                  </div>`,
@@ -1343,13 +1424,13 @@
             );
         
     
-            var circle_888cbf5f578d9767abc702bce1421748 = L.circle(
+            var circle_43b86567bba485fbdc5486432134cfbd = L.circle(
                 [34.03, -6.84],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_888cbf5f578d9767abc702bce1421748.bindTooltip(
+            circle_43b86567bba485fbdc5486432134cfbd.bindTooltip(
                 `<div>
                      Country: morocco<br>PM2.5: 11.79 µg/m³
                  </div>`,
@@ -1357,13 +1438,13 @@
             );
         
     
-            var circle_ec2849871f00a4c156e2e48455453c5d = L.circle(
+            var circle_a51336cd2041015e7672540308c5357d = L.circle(
                 [-25.97, 32.59],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_ec2849871f00a4c156e2e48455453c5d.bindTooltip(
+            circle_a51336cd2041015e7672540308c5357d.bindTooltip(
                 `<div>
                      Country: mozambique<br>PM2.5: 7.59 µg/m³
                  </div>`,
@@ -1371,13 +1452,13 @@
             );
         
     
-            var circle_65df7e535e43eef4e1d55d634f15e4c9 = L.circle(
+            var circle_10d1daa24903a813b78202269c9013b7 = L.circle(
                 [16.830993377483445, 94.99715231788079],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_65df7e535e43eef4e1d55d634f15e4c9.bindTooltip(
+            circle_10d1daa24903a813b78202269c9013b7.bindTooltip(
                 `<div>
                      Country: myanmar<br>PM2.5: 24.23 µg/m³
                  </div>`,
@@ -1385,13 +1466,13 @@
             );
         
     
-            var circle_762085d4ffcd1a1926d10b3e7f4d04cb = L.circle(
+            var circle_71bd4bda4686c8d67040642c1a2b82d5 = L.circle(
                 [27.720000000000002, 85.32],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_762085d4ffcd1a1926d10b3e7f4d04cb.bindTooltip(
+            circle_71bd4bda4686c8d67040642c1a2b82d5.bindTooltip(
                 `<div>
                      Country: nepal<br>PM2.5: 138.46 µg/m³
                  </div>`,
@@ -1399,13 +1480,13 @@
             );
         
     
-            var circle_acd95ba7f6e03529e7f4963dfa650890 = L.circle(
+            var circle_f471d7879b7b75de7fa2e288783f5502 = L.circle(
                 [52.37, 4.89],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_acd95ba7f6e03529e7f4963dfa650890.bindTooltip(
+            circle_f471d7879b7b75de7fa2e288783f5502.bindTooltip(
                 `<div>
                      Country: netherlands<br>PM2.5: 5.38 µg/m³
                  </div>`,
@@ -1413,13 +1494,13 @@
             );
         
     
-            var circle_c30eb562a22e515079cb3dca7ceb9493 = L.circle(
+            var circle_59be90113d7648bbc82446147d7715a7 = L.circle(
                 [-41.3, 174.78],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_c30eb562a22e515079cb3dca7ceb9493.bindTooltip(
+            circle_59be90113d7648bbc82446147d7715a7.bindTooltip(
                 `<div>
                      Country: new zealand<br>PM2.5: 2.00 µg/m³
                  </div>`,
@@ -1427,13 +1508,13 @@
             );
         
     
-            var circle_594da27074c6d199eb1eb82b24dc7662 = L.circle(
+            var circle_7dc6df4d1eab61d8d10b0bbc992969df = L.circle(
                 [12.15, -86.27],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_594da27074c6d199eb1eb82b24dc7662.bindTooltip(
+            circle_7dc6df4d1eab61d8d10b0bbc992969df.bindTooltip(
                 `<div>
                      Country: nicaragua<br>PM2.5: 4.76 µg/m³
                  </div>`,
@@ -1441,13 +1522,13 @@
             );
         
     
-            var circle_13aa21c3d102ae0fae16d2e89cdabb20 = L.circle(
+            var circle_2e19a04ef99c978edfa78f69e0422876 = L.circle(
                 [13.52, 2.12],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_13aa21c3d102ae0fae16d2e89cdabb20.bindTooltip(
+            circle_2e19a04ef99c978edfa78f69e0422876.bindTooltip(
                 `<div>
                      Country: niger<br>PM2.5: 75.37 µg/m³
                  </div>`,
@@ -1455,13 +1536,13 @@
             );
         
     
-            var circle_6352054258ebbca34868ee9789fb380b = L.circle(
+            var circle_b9a326319ce12b9417a79563f27d5f8e = L.circle(
                 [9.18, 7.180000000000001],
-                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_6352054258ebbca34868ee9789fb380b.bindTooltip(
+            circle_b9a326319ce12b9417a79563f27d5f8e.bindTooltip(
                 `<div>
                      Country: nigeria<br>PM2.5: 48.70 µg/m³
                  </div>`,
@@ -1469,13 +1550,13 @@
             );
         
     
-            var circle_5690f9bf3b332cf50366fcf2e7a6e9b5 = L.circle(
+            var circle_68d6c48e9aa377494ca9f9e50ea05b12 = L.circle(
                 [59.92, 10.75],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_5690f9bf3b332cf50366fcf2e7a6e9b5.bindTooltip(
+            circle_68d6c48e9aa377494ca9f9e50ea05b12.bindTooltip(
                 `<div>
                      Country: norway<br>PM2.5: 4.16 µg/m³
                  </div>`,
@@ -1483,13 +1564,13 @@
             );
         
     
-            var circle_722987aa63e02ff22d83c0ec800d2893 = L.circle(
+            var circle_3ecf906f9db5a26e94d2a783fb50a52a = L.circle(
                 [23.61, 58.59],
-                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_722987aa63e02ff22d83c0ec800d2893.bindTooltip(
+            circle_3ecf906f9db5a26e94d2a783fb50a52a.bindTooltip(
                 `<div>
                      Country: oman<br>PM2.5: 30.92 µg/m³
                  </div>`,
@@ -1497,13 +1578,13 @@
             );
         
     
-            var circle_9debf45c65c38e3c7bdd5ba55b88023e = L.circle(
+            var circle_77b264bdbd6d75cfdcd8518aef0459f4 = L.circle(
                 [33.7, 73.17],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_9debf45c65c38e3c7bdd5ba55b88023e.bindTooltip(
+            circle_77b264bdbd6d75cfdcd8518aef0459f4.bindTooltip(
                 `<div>
                      Country: pakistan<br>PM2.5: 128.41 µg/m³
                  </div>`,
@@ -1511,13 +1592,13 @@
             );
         
     
-            var circle_0d7345f9ea088d44f141bddd165b8d7e = L.circle(
+            var circle_5bfdec7afcf8ea1c08a8df6eea6eb15a = L.circle(
                 [8.97, -79.53],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_0d7345f9ea088d44f141bddd165b8d7e.bindTooltip(
+            circle_5bfdec7afcf8ea1c08a8df6eea6eb15a.bindTooltip(
                 `<div>
                      Country: panama<br>PM2.5: 4.01 µg/m³
                  </div>`,
@@ -1525,13 +1606,13 @@
             );
         
     
-            var circle_c13318c3d82a9b89faad5421008590f0 = L.circle(
+            var circle_cdec70dd67c3ea96d44073b7ac9a22bd = L.circle(
                 [-9.46, 147.19],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_c13318c3d82a9b89faad5421008590f0.bindTooltip(
+            circle_cdec70dd67c3ea96d44073b7ac9a22bd.bindTooltip(
                 `<div>
                      Country: papua new guinea<br>PM2.5: 8.22 µg/m³
                  </div>`,
@@ -1539,13 +1620,13 @@
             );
         
     
-            var circle_d2218ddd5d59765c9d6d5b48bf718f96 = L.circle(
+            var circle_e545b8b287994fe98f2be73f0ec05a18 = L.circle(
                 [-21.224039735099336, -58.46814569536424],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_d2218ddd5d59765c9d6d5b48bf718f96.bindTooltip(
+            circle_e545b8b287994fe98f2be73f0ec05a18.bindTooltip(
                 `<div>
                      Country: paraguay<br>PM2.5: 5.69 µg/m³
                  </div>`,
@@ -1553,13 +1634,13 @@
             );
         
     
-            var circle_f9d567b5fd69c63d7ac4011a977773f9 = L.circle(
+            var circle_16254a6cfba66fbfb64b9baea51199ef = L.circle(
                 [-12.05, -77.05],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_f9d567b5fd69c63d7ac4011a977773f9.bindTooltip(
+            circle_16254a6cfba66fbfb64b9baea51199ef.bindTooltip(
                 `<div>
                      Country: peru<br>PM2.5: 6.82 µg/m³
                  </div>`,
@@ -1567,13 +1648,13 @@
             );
         
     
-            var circle_e37b96673a7a77a8816a83c3e47281bf = L.circle(
+            var circle_c77f9c82c78f723758a496936ad928fa = L.circle(
                 [14.6, 120.98],
-                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_e37b96673a7a77a8816a83c3e47281bf.bindTooltip(
+            circle_c77f9c82c78f723758a496936ad928fa.bindTooltip(
                 `<div>
                      Country: philippines<br>PM2.5: 25.07 µg/m³
                  </div>`,
@@ -1581,13 +1662,13 @@
             );
         
     
-            var circle_91f66a8fb9c5218b620a663a5e2b39c9 = L.circle(
+            var circle_25de80693e39c4a62225694c2c7aad0d = L.circle(
                 [52.25, 21.0],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_91f66a8fb9c5218b620a663a5e2b39c9.bindTooltip(
+            circle_25de80693e39c4a62225694c2c7aad0d.bindTooltip(
                 `<div>
                      Country: poland<br>PM2.5: 12.66 µg/m³
                  </div>`,
@@ -1595,13 +1676,13 @@
             );
         
     
-            var circle_8c814f1d86e6d7e2b1d942d56eca01c5 = L.circle(
+            var circle_b8e1e830cfee807de35c2ba3054470b5 = L.circle(
                 [38.72, -9.13],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_8c814f1d86e6d7e2b1d942d56eca01c5.bindTooltip(
+            circle_b8e1e830cfee807de35c2ba3054470b5.bindTooltip(
                 `<div>
                      Country: portugal<br>PM2.5: 9.45 µg/m³
                  </div>`,
@@ -1609,13 +1690,13 @@
             );
         
     
-            var circle_beb10da500cb67829f5f10b7bcafd9f6 = L.circle(
+            var circle_8cdecceb30082a52107f110a47977964 = L.circle(
                 [25.29, 51.53],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_beb10da500cb67829f5f10b7bcafd9f6.bindTooltip(
+            circle_8cdecceb30082a52107f110a47977964.bindTooltip(
                 `<div>
                      Country: qatar<br>PM2.5: 51.73 µg/m³
                  </div>`,
@@ -1623,13 +1704,13 @@
             );
         
     
-            var circle_73b3c2de222a46f44a25e95e70e795aa = L.circle(
+            var circle_282c58f57a97f3daa3fb5179e0f13b4d = L.circle(
                 [44.43, 26.1],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_73b3c2de222a46f44a25e95e70e795aa.bindTooltip(
+            circle_282c58f57a97f3daa3fb5179e0f13b4d.bindTooltip(
                 `<div>
                      Country: romania<br>PM2.5: 17.37 µg/m³
                  </div>`,
@@ -1637,13 +1718,13 @@
             );
         
     
-            var circle_ce59c7bb413a68dbb6560696397d1b2a = L.circle(
+            var circle_7bf187d0e7c644e58c50881f440373fe = L.circle(
                 [53.91576086956522, 63.358224637681154],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_ce59c7bb413a68dbb6560696397d1b2a.bindTooltip(
+            circle_7bf187d0e7c644e58c50881f440373fe.bindTooltip(
                 `<div>
                      Country: russia<br>PM2.5: 6.05 µg/m³
                  </div>`,
@@ -1651,13 +1732,13 @@
             );
         
     
-            var circle_810ea43fadb943bef2a2ec959039fe0c = L.circle(
+            var circle_b7cf8ed18ad64b0b44bc4445bb102a76 = L.circle(
                 [-1.95, 30.059999999999995],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_810ea43fadb943bef2a2ec959039fe0c.bindTooltip(
+            circle_b7cf8ed18ad64b0b44bc4445bb102a76.bindTooltip(
                 `<div>
                      Country: rwanda<br>PM2.5: 21.18 µg/m³
                  </div>`,
@@ -1665,13 +1746,13 @@
             );
         
     
-            var circle_08ca06b1bd99d9c1a74af4e4e2e00fcb = L.circle(
+            var circle_9aded4d9c7fecec1c69154396c09cc00 = L.circle(
                 [14.0, -61.0],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_08ca06b1bd99d9c1a74af4e4e2e00fcb.bindTooltip(
+            circle_9aded4d9c7fecec1c69154396c09cc00.bindTooltip(
                 `<div>
                      Country: saint lucia<br>PM2.5: 2.84 µg/m³
                  </div>`,
@@ -1679,13 +1760,13 @@
             );
         
     
-            var circle_b2b6146c5fc28bf06e194210bc280d11 = L.circle(
+            var circle_0dafb5a8ad9349b4b0ead1946d80555e = L.circle(
                 [13.13, -61.22],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_b2b6146c5fc28bf06e194210bc280d11.bindTooltip(
+            circle_0dafb5a8ad9349b4b0ead1946d80555e.bindTooltip(
                 `<div>
                      Country: saint vincent and the grenadines<br>PM2.5: 3.19 µg/m³
                  </div>`,
@@ -1693,13 +1774,13 @@
             );
         
     
-            var circle_1a4fd2a8edbb232d42781084fe218cac = L.circle(
+            var circle_68e8bab881c7698450f293670273d59e = L.circle(
                 [-13.83, -171.73],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_1a4fd2a8edbb232d42781084fe218cac.bindTooltip(
+            circle_68e8bab881c7698450f293670273d59e.bindTooltip(
                 `<div>
                      Country: samoa<br>PM2.5: 2.18 µg/m³
                  </div>`,
@@ -1707,13 +1788,13 @@
             );
         
     
-            var circle_9d0bf560698304eccd7b4555bb43eeaa = L.circle(
+            var circle_67ede0759acc7e272d1b871ce5704ae7 = L.circle(
                 [24.64, 46.77],
-                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_9d0bf560698304eccd7b4555bb43eeaa.bindTooltip(
+            circle_67ede0759acc7e272d1b871ce5704ae7.bindTooltip(
                 `<div>
                      Country: saudi arabia<br>PM2.5: 44.73 µg/m³
                  </div>`,
@@ -1721,13 +1802,13 @@
             );
         
     
-            var circle_1abac970fab059b2b646c6c2eb987a3d = L.circle(
+            var circle_0eab5c812f8b14c457c962f7ceeccb21 = L.circle(
                 [14.660440251572329, -17.330817610062894],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_1abac970fab059b2b646c6c2eb987a3d.bindTooltip(
+            circle_0eab5c812f8b14c457c962f7ceeccb21.bindTooltip(
                 `<div>
                      Country: senegal<br>PM2.5: 74.63 µg/m³
                  </div>`,
@@ -1735,13 +1816,13 @@
             );
         
     
-            var circle_a75a0fa1d483b35ded8637e0de2a0ac1 = L.circle(
+            var circle_d60f089ad3397d2ad273fcf0b24aaedf = L.circle(
                 [44.8, 20.47],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_a75a0fa1d483b35ded8637e0de2a0ac1.bindTooltip(
+            circle_d60f089ad3397d2ad273fcf0b24aaedf.bindTooltip(
                 `<div>
                      Country: serbia<br>PM2.5: 16.37 µg/m³
                  </div>`,
@@ -1749,13 +1830,27 @@
             );
         
     
-            var circle_667ff82e9a1e01344a0185cb47f1b640 = L.circle(
-                [8.49, -13.23],
-                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            var circle_64c19654e76f793423453b0e807553cd = L.circle(
+                [-4.62, 55.45],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_667ff82e9a1e01344a0185cb47f1b640.bindTooltip(
+            circle_64c19654e76f793423453b0e807553cd.bindTooltip(
+                `<div>
+                     Country: seychelles<br>PM2.5: 2.82 µg/m³
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_98ea4ad0fbee9b51f692b5bfea29964f = L.circle(
+                [8.49, -13.23],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
+        
+    
+            circle_98ea4ad0fbee9b51f692b5bfea29964f.bindTooltip(
                 `<div>
                      Country: sierra leone<br>PM2.5: 30.00 µg/m³
                  </div>`,
@@ -1763,13 +1858,13 @@
             );
         
     
-            var circle_3cf71778f2678de5d994e52c36c32ed0 = L.circle(
+            var circle_d89a4bd537d4ab28dd9cb18399df8824 = L.circle(
                 [48.15, 17.12],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_3cf71778f2678de5d994e52c36c32ed0.bindTooltip(
+            circle_d89a4bd537d4ab28dd9cb18399df8824.bindTooltip(
                 `<div>
                      Country: slovakia<br>PM2.5: 8.05 µg/m³
                  </div>`,
@@ -1777,13 +1872,13 @@
             );
         
     
-            var circle_ec2d4c462c7a1ff7007e8a7ccceef80f = L.circle(
+            var circle_de82943aa0ffcf470730b65ed9700890 = L.circle(
                 [46.06632530120482, 14.441325301204818],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_ec2d4c462c7a1ff7007e8a7ccceef80f.bindTooltip(
+            circle_de82943aa0ffcf470730b65ed9700890.bindTooltip(
                 `<div>
                      Country: slovenia<br>PM2.5: 24.21 µg/m³
                  </div>`,
@@ -1791,13 +1886,13 @@
             );
         
     
-            var circle_dde99aaa0f93429eea8643cc6e26b280 = L.circle(
+            var circle_438e6cc3ee9e574ff1c905a610599596 = L.circle(
                 [-25.75, 28.190000000000005],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_dde99aaa0f93429eea8643cc6e26b280.bindTooltip(
+            circle_438e6cc3ee9e574ff1c905a610599596.bindTooltip(
                 `<div>
                      Country: south africa<br>PM2.5: 24.35 µg/m³
                  </div>`,
@@ -1805,13 +1900,13 @@
             );
         
     
-            var circle_c37f20b97b14bf7c7c79ecc961ff2c23 = L.circle(
+            var circle_579808e986f703e740c9beed88d50975 = L.circle(
                 [37.57, 127.0],
-                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_c37f20b97b14bf7c7c79ecc961ff2c23.bindTooltip(
+            circle_579808e986f703e740c9beed88d50975.bindTooltip(
                 `<div>
                      Country: south korea<br>PM2.5: 46.09 µg/m³
                  </div>`,
@@ -1819,13 +1914,13 @@
             );
         
     
-            var circle_81f42a6aa9e4a8801aa5abb1991b993d = L.circle(
+            var circle_2a0139e2c3dac8451123f6ffebaf0bb3 = L.circle(
                 [40.4, -3.68],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_81f42a6aa9e4a8801aa5abb1991b993d.bindTooltip(
+            circle_2a0139e2c3dac8451123f6ffebaf0bb3.bindTooltip(
                 `<div>
                      Country: spain<br>PM2.5: 19.24 µg/m³
                  </div>`,
@@ -1833,13 +1928,13 @@
             );
         
     
-            var circle_71be02f25bd129aa15335941fe032fb7 = L.circle(
+            var circle_28b8e0f016142054bf3740bf43afb823 = L.circle(
                 [6.930000000000001, 79.85],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_71be02f25bd129aa15335941fe032fb7.bindTooltip(
+            circle_28b8e0f016142054bf3740bf43afb823.bindTooltip(
                 `<div>
                      Country: sri lanka<br>PM2.5: 21.96 µg/m³
                  </div>`,
@@ -1847,13 +1942,13 @@
             );
         
     
-            var circle_50a631867a8a63ce01e69917fc77eae3 = L.circle(
+            var circle_184cfc58e4d1b52171a5430a7f3b074e = L.circle(
                 [13.87, 28.490000000000006],
-                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_50a631867a8a63ce01e69917fc77eae3.bindTooltip(
+            circle_184cfc58e4d1b52171a5430a7f3b074e.bindTooltip(
                 `<div>
                      Country: sudan<br>PM2.5: 29.69 µg/m³
                  </div>`,
@@ -1861,13 +1956,13 @@
             );
         
     
-            var circle_6b3ec808a57bcbd5d996f570da9615ad = L.circle(
+            var circle_76b4cab01c4b3db347a80a6535668251 = L.circle(
                 [5.83, -55.17],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_6b3ec808a57bcbd5d996f570da9615ad.bindTooltip(
+            circle_76b4cab01c4b3db347a80a6535668251.bindTooltip(
                 `<div>
                      Country: suriname<br>PM2.5: 3.54 µg/m³
                  </div>`,
@@ -1875,13 +1970,13 @@
             );
         
     
-            var circle_0ed0517a55920cd67904e45d579ac02a = L.circle(
+            var circle_f7dbf14084be1d1ce75fa064f6e04a1a = L.circle(
                 [59.33, 18.05],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_0ed0517a55920cd67904e45d579ac02a.bindTooltip(
+            circle_f7dbf14084be1d1ce75fa064f6e04a1a.bindTooltip(
                 `<div>
                      Country: sweden<br>PM2.5: 3.11 µg/m³
                  </div>`,
@@ -1889,13 +1984,13 @@
             );
         
     
-            var circle_5798d66ab8036c2590d706f5c89c2902 = L.circle(
+            var circle_2d8f37f55567abcfaf22c5d5d6e61ded = L.circle(
                 [46.89962962962963, 7.640432098765432],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_5798d66ab8036c2590d706f5c89c2902.bindTooltip(
+            circle_2d8f37f55567abcfaf22c5d5d6e61ded.bindTooltip(
                 `<div>
                      Country: switzerland<br>PM2.5: 13.18 µg/m³
                  </div>`,
@@ -1903,13 +1998,13 @@
             );
         
     
-            var circle_fdf47ec456b1641851a353e930c51317 = L.circle(
+            var circle_279f48521169da0e6b54eca115eb1960 = L.circle(
                 [33.5, 36.3],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_fdf47ec456b1641851a353e930c51317.bindTooltip(
+            circle_279f48521169da0e6b54eca115eb1960.bindTooltip(
                 `<div>
                      Country: syria<br>PM2.5: 17.22 µg/m³
                  </div>`,
@@ -1917,13 +2012,13 @@
             );
         
     
-            var circle_3c591fbd6a57ac0496a1dbab76e20978 = L.circle(
+            var circle_b374659af51c7c053f52d20f8340d49c = L.circle(
                 [38.56, 68.77],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_3c591fbd6a57ac0496a1dbab76e20978.bindTooltip(
+            circle_b374659af51c7c053f52d20f8340d49c.bindTooltip(
                 `<div>
                      Country: tajikistan<br>PM2.5: 7.15 µg/m³
                  </div>`,
@@ -1931,13 +2026,13 @@
             );
         
     
-            var circle_dce18238e9b402d5ceb3f1c5fd3a3668 = L.circle(
+            var circle_c7c15ce37d0a15bc7c1eaa2d0e64dfe6 = L.circle(
                 [-6.18, 35.75],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_dce18238e9b402d5ceb3f1c5fd3a3668.bindTooltip(
+            circle_c7c15ce37d0a15bc7c1eaa2d0e64dfe6.bindTooltip(
                 `<div>
                      Country: tanzania<br>PM2.5: 1.95 µg/m³
                  </div>`,
@@ -1945,13 +2040,13 @@
             );
         
     
-            var circle_430a314706cdf758fabee456864e23c8 = L.circle(
+            var circle_a2856ddb681f805d37bd0531123e4c12 = L.circle(
                 [16.256644518272424, 100.64956810631229],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_430a314706cdf758fabee456864e23c8.bindTooltip(
+            circle_a2856ddb681f805d37bd0531123e4c12.bindTooltip(
                 `<div>
                      Country: thailand<br>PM2.5: 78.50 µg/m³
                  </div>`,
@@ -1959,13 +2054,41 @@
             );
         
     
-            var circle_2d0472706f93cf4e333cea2c9b1c3c93 = L.circle(
-                [-21.13, -175.2],
+            var circle_307ada9009cb86df4a2e8f8d712ec1cb = L.circle(
+                [25.08, -77.35],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_2d0472706f93cf4e333cea2c9b1c3c93.bindTooltip(
+            circle_307ada9009cb86df4a2e8f8d712ec1cb.bindTooltip(
+                `<div>
+                     Country: the bahamas<br>PM2.5: 3.60 µg/m³
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ba7cfd543e93446477885919fc2ab2e7 = L.circle(
+                [13.45, -16.58],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
+        
+    
+            circle_ba7cfd543e93446477885919fc2ab2e7.bindTooltip(
+                `<div>
+                     Country: the gambia<br>PM2.5: 56.02 µg/m³
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4b59ef9918eaaa6f79834ab358927357 = L.circle(
+                [-21.13, -175.2],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
+        
+    
+            circle_4b59ef9918eaaa6f79834ab358927357.bindTooltip(
                 `<div>
                      Country: tonga<br>PM2.5: 2.82 µg/m³
                  </div>`,
@@ -1973,13 +2096,13 @@
             );
         
     
-            var circle_f08b1ec8be45427c97a354ce0eb7ab1a = L.circle(
+            var circle_7eebb267261629a294e694c1b0597c13 = L.circle(
                 [10.65, -61.52],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_f08b1ec8be45427c97a354ce0eb7ab1a.bindTooltip(
+            circle_7eebb267261629a294e694c1b0597c13.bindTooltip(
                 `<div>
                      Country: trinidad and tobago<br>PM2.5: 2.26 µg/m³
                  </div>`,
@@ -1987,13 +2110,13 @@
             );
         
     
-            var circle_bc4449eb68c778d61ff949f109f19a78 = L.circle(
+            var circle_650491ce72c5f1b014963cf77b487026 = L.circle(
                 [36.8, 10.18],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_bc4449eb68c778d61ff949f109f19a78.bindTooltip(
+            circle_650491ce72c5f1b014963cf77b487026.bindTooltip(
                 `<div>
                      Country: tunisia<br>PM2.5: 13.04 µg/m³
                  </div>`,
@@ -2001,13 +2124,13 @@
             );
         
     
-            var circle_4c714c226856b5a79853ca198bff3d70 = L.circle(
+            var circle_f08c561a3073ef5ae271dbc1adf87619 = L.circle(
                 [39.74, 30.240000000000006],
-                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_4c714c226856b5a79853ca198bff3d70.bindTooltip(
+            circle_f08c561a3073ef5ae271dbc1adf87619.bindTooltip(
                 `<div>
                      Country: turkey<br>PM2.5: 36.33 µg/m³
                  </div>`,
@@ -2015,13 +2138,13 @@
             );
         
     
-            var circle_507c6d33c11ed7548f8e62b4eed1d4f6 = L.circle(
+            var circle_8bad7dbcdd744ea4a3c82cc790660c3e = L.circle(
                 [37.95, 58.38000000000001],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_507c6d33c11ed7548f8e62b4eed1d4f6.bindTooltip(
+            circle_8bad7dbcdd744ea4a3c82cc790660c3e.bindTooltip(
                 `<div>
                      Country: turkmenistan<br>PM2.5: 17.31 µg/m³
                  </div>`,
@@ -2029,13 +2152,13 @@
             );
         
     
-            var circle_f5d97366041061a7481ecc60f852bbf8 = L.circle(
+            var circle_f39b8bac4c7a6934f9b888d165b90e57 = L.circle(
                 [0.32, 32.57],
-                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_f5d97366041061a7481ecc60f852bbf8.bindTooltip(
+            circle_f39b8bac4c7a6934f9b888d165b90e57.bindTooltip(
                 `<div>
                      Country: uganda<br>PM2.5: 45.46 µg/m³
                  </div>`,
@@ -2043,13 +2166,13 @@
             );
         
     
-            var circle_79218c17f74f81de5f20872178cc84ff = L.circle(
+            var circle_0ae744e9a612c1d97480310264773bad = L.circle(
                 [50.39026490066225, 30.0882119205298],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_79218c17f74f81de5f20872178cc84ff.bindTooltip(
+            circle_0ae744e9a612c1d97480310264773bad.bindTooltip(
                 `<div>
                      Country: ukraine<br>PM2.5: 5.55 µg/m³
                  </div>`,
@@ -2057,13 +2180,13 @@
             );
         
     
-            var circle_348784f662161df351b331802830ea9d = L.circle(
+            var circle_11ffee632106e2d549c3c3ce743b9452 = L.circle(
                 [24.47, 54.36999999999999],
-                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_348784f662161df351b331802830ea9d.bindTooltip(
+            circle_11ffee632106e2d549c3c3ce743b9452.bindTooltip(
                 `<div>
                      Country: united arab emirates<br>PM2.5: 36.37 µg/m³
                  </div>`,
@@ -2071,13 +2194,13 @@
             );
         
     
-            var circle_c5f5f97ab85749bc9e95cba5a6e32cb5 = L.circle(
+            var circle_be9e14bd54f28c28fcf094042a9fc0ef = L.circle(
                 [51.52, -0.11],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_c5f5f97ab85749bc9e95cba5a6e32cb5.bindTooltip(
+            circle_be9e14bd54f28c28fcf094042a9fc0ef.bindTooltip(
                 `<div>
                      Country: united kingdom<br>PM2.5: 7.15 µg/m³
                  </div>`,
@@ -2085,13 +2208,27 @@
             );
         
     
-            var circle_cc84b9864297ff51ce5a59dae45a7a20 = L.circle(
-                [-34.86, -56.17],
+            var circle_d27f99ec2e42af2dff7003b147653aeb = L.circle(
+                [46.64900662251656, -120.5744370860927],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_cc84b9864297ff51ce5a59dae45a7a20.bindTooltip(
+            circle_d27f99ec2e42af2dff7003b147653aeb.bindTooltip(
+                `<div>
+                     Country: united states<br>PM2.5: 6.22 µg/m³
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_3e1af35c330e468a8e14071d20b1acc3 = L.circle(
+                [-34.86, -56.17],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
+        
+    
+            circle_3e1af35c330e468a8e14071d20b1acc3.bindTooltip(
                 `<div>
                      Country: uruguay<br>PM2.5: 4.90 µg/m³
                  </div>`,
@@ -2099,13 +2236,13 @@
             );
         
     
-            var circle_b219ca329de748125ad5ac32a6e9883f = L.circle(
+            var circle_dadd041169646e1deb4441c962f6e3a2 = L.circle(
                 [41.32, 69.25],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_b219ca329de748125ad5ac32a6e9883f.bindTooltip(
+            circle_dadd041169646e1deb4441c962f6e3a2.bindTooltip(
                 `<div>
                      Country: uzbekistan<br>PM2.5: 12.70 µg/m³
                  </div>`,
@@ -2113,13 +2250,13 @@
             );
         
     
-            var circle_c4883882740415a53dd8d04dff603d9d = L.circle(
+            var circle_de71a589899c96a00fdfe7678556cd86 = L.circle(
                 [-17.73, 168.32],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_c4883882740415a53dd8d04dff603d9d.bindTooltip(
+            circle_de71a589899c96a00fdfe7678556cd86.bindTooltip(
                 `<div>
                      Country: vanuatu<br>PM2.5: 3.30 µg/m³
                  </div>`,
@@ -2127,13 +2264,13 @@
             );
         
     
-            var circle_22455887906f518b9ac297fae8058b27 = L.circle(
+            var circle_50f63e0207738a82432364503a9e763e = L.circle(
                 [10.5, -66.92],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_22455887906f518b9ac297fae8058b27.bindTooltip(
+            circle_50f63e0207738a82432364503a9e763e.bindTooltip(
                 `<div>
                      Country: venezuela<br>PM2.5: 16.11 µg/m³
                  </div>`,
@@ -2141,13 +2278,13 @@
             );
         
     
-            var circle_85e9bd55a44ad2252aa81b292bac3d7b = L.circle(
+            var circle_7d3f18d45459f6ffc8acd06371d2f0f3 = L.circle(
                 [21.03, 105.85],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_85e9bd55a44ad2252aa81b292bac3d7b.bindTooltip(
+            circle_7d3f18d45459f6ffc8acd06371d2f0f3.bindTooltip(
                 `<div>
                      Country: vietnam<br>PM2.5: 114.78 µg/m³
                  </div>`,
@@ -2155,13 +2292,13 @@
             );
         
     
-            var circle_8214d1aa25559a186fc268ac363304ea = L.circle(
+            var circle_f87ba31a3339c6fa3b93d42aaf7515fb = L.circle(
                 [15.35, 44.21],
-                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_8214d1aa25559a186fc268ac363304ea.bindTooltip(
+            circle_f87ba31a3339c6fa3b93d42aaf7515fb.bindTooltip(
                 `<div>
                      Country: yemen<br>PM2.5: 27.17 µg/m³
                  </div>`,
@@ -2169,13 +2306,13 @@
             );
         
     
-            var circle_0bb81b1da0726beba90c35779cb93988 = L.circle(
+            var circle_1b324754e46ee16787c40b558cee7c18 = L.circle(
                 [-15.42, 28.279999999999998],
                 {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_0bb81b1da0726beba90c35779cb93988.bindTooltip(
+            circle_1b324754e46ee16787c40b558cee7c18.bindTooltip(
                 `<div>
                      Country: zambia<br>PM2.5: 22.26 µg/m³
                  </div>`,
@@ -2183,13 +2320,13 @@
             );
         
     
-            var circle_27dc706033f3244b501c7f6b397dd294 = L.circle(
+            var circle_1bcf11766d120df8a6f907565d254915 = L.circle(
                 [-17.82, 31.04],
-                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
     
-            circle_27dc706033f3244b501c7f6b397dd294.bindTooltip(
+            circle_1bcf11766d120df8a6f907565d254915.bindTooltip(
                 `<div>
                      Country: zimbabwe<br>PM2.5: 36.99 µg/m³
                  </div>`,
@@ -2197,7 +2334,10 @@
             );
         
     
-            tile_layer_ecf01ecf945122cb1320ad83458978b5.addTo(map_484e8e82b060860d2bd3dd3e8905af6c);
+            tile_layer_01302935dc4e0c3f997a466d6e9a05e9.addTo(map_73ddcacdd573e1c07e87ffe094d50021);
+        
+    
+            tile_layer_01302935dc4e0c3f997a466d6e9a05e9.addTo(map_73ddcacdd573e1c07e87ffe094d50021);
         
 </script>
 </html>
